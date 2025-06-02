@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ремонт стиральных машин в Алматы. Быстро, недорого, с гарантией.">
-    <meta name="keywords" content="ремонт стиральных машин Алматы, починить стиралку Алматы, мастер стиральных машин Алматы">
-    <title>Ремонт стиральных машин в Алматы - Просто и Надежно</title>
+    <meta name="description" content="Ремонт стиральных машин в Алматы. Быстро, качественно, с гарантией. Звоните или пишите в WhatsApp!">
+    <meta name="keywords" content="ремонт стиральных машин Алматы, WhatsApp ремонт стиралок Алматы, позвонить мастеру стиральных машин Алматы">
+    <title>Ремонт стиральных машин Алматы | WhatsApp и Звонок</title>
     
-    <!-- Подключаем простой шрифт -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <!-- Подключаем Font Awesome для иконок (возьмите актуальную версию с cdnjs.com) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
@@ -22,7 +20,6 @@
     <header>
         <div class="container">
             <div class="logo">
-                <!-- Можете заменить на SVG или текстовый логотип -->
                 <i class="fas fa-tools logo-icon"></i> 
                 <span>РемСтирАлматы</span>
             </div>
@@ -31,17 +28,24 @@
                 <a href="#benefits">Почему мы</a>
                 <a href="#contact">Контакты</a>
             </nav>
-            <a href="https://wa.me/7777326696?text=Здравствуйте!%20Хочу%20вызвать%20мастера%20для%20ремонта%20стиральной%20машины." target="_blank" class="cta-button">Написать в WhatsApp</a>
+            <a href="tel:+77777326696" class="header-phone"><i class="fas fa-phone"></i> +7 (777) 732-66-96</a>
         </div>
     </header>
 
     <section id="hero">
-        <!-- Замените URL на реальное изображение стиральной машины или ремонта -->
-        <img src="https://via.placeholder.com/1200x500/E8E8E8/B0B0B0?text=Ремонт+стиральных+машин" alt="Ремонт стиральных машин" class="hero-image">
+        <!-- ЗАМЕНИТЕ НА ПУТЬ К ВАШЕМУ ЛОКАЛЬНОМУ ИЗОБРАЖЕНИЮ -->
+        <img src="img/hero-background.jpg" alt="Ремонт стиральных машин" class="hero-image">
         <div class="hero-content">
             <h1>Ремонт стиральных машин в Алматы</h1>
             <p>Быстро и качественно устраним любую поломку. Выезд мастера на дом в удобное для вас время.</p>
-            <a href="#contact-form-section" class="cta-button">Оставить заявку</a>
+            <div class="hero-buttons">
+                <a href="https://wa.me/77777326696?text=Здравствуйте!%20Хочу%20заказать%20ремонт%20стиральной%20машины." target="_blank" class="cta-button whatsapp-button">
+                    <i class="fab fa-whatsapp"></i> Написать в WhatsApp
+                </a>
+                <a href="tel:+77777326696" class="cta-button call-button">
+                    <i class="fas fa-phone-alt"></i> Позвонить сейчас
+                </a>
+            </div>
         </div>
     </section>
 
@@ -108,38 +112,42 @@
                     <p>Используем проверенные детали.</p>
                 </div>
             </div>
-             <!-- Блок с изображением мастера или довольного клиента -->
             <div class="image-block">
-                <!-- Замените URL на реальное изображение -->
-                <img src="https://via.placeholder.com/800x400/D0D0D0/909090?text=Мастер+за+работой" alt="Мастер по ремонту стиральных машин">
+                <!-- ЗАМЕНИТЕ НА ПУТЬ К ВАШЕМУ ЛОКАЛЬНОМУ ИЗОБРАЖЕНИЮ -->
+                <img src="img/master-at-work.jpg" alt="Мастер по ремонту стиральных машин">
                 <p>Мы ценим ваше время и доверие!</p>
             </div>
         </div>
     </section>
 
-    <<section id="call-to-action-whatsapp" class="content-section"> <!-- Изменил id и, возможно, заголовок -->
-    <div class="container">
-        <h2>Нужен ремонт? Свяжитесь с нами!</h2>
-        <p>Самый быстрый способ получить консультацию и вызвать мастера – написать нам в WhatsApp.</p>
-        <a href="https://wa.me/77771234567?text=Здравствуйте!%20Интересует%20ремонт%20стиральной%20машины." target="_blank" class="cta-button" style="margin-top: 20px;">
-            <i class="fab fa-whatsapp"></i> Написать в WhatsApp
-        </a>
-    </div>
-</section>
+    <!-- Секция с призывом к действию (альтернатива форме) -->
+    <section id="call-to-action" class="content-section">
+        <div class="container" style="text-align: center;">
+            <h2>Нужен срочный ремонт?</h2>
+            <p>Свяжитесь с нами удобным для вас способом прямо сейчас!</p>
+            <div class="action-buttons">
+                <a href="https://wa.me/77777326696?text=Здравствуйте!%20Нужен%20ремонт%20стиральной%20машины." target="_blank" class="cta-button whatsapp-button">
+                    <i class="fab fa-whatsapp"></i> Написать в WhatsApp
+                </a>
+                <a href="tel:+77777326696" class="cta-button call-button">
+                    <i class="fas fa-phone-alt"></i> Позвонить: +7 (777) 732-66-96
+                </a>
+            </div>
+        </div>
+    </section>
 
     <section id="contact" class="content-section bg-light">
         <div class="container">
             <h2>Контакты</h2>
             <div class="contact-details">
-                <p><i class="fas fa-phone-alt"></i> <strong>Телефон:</strong> <a href="tel:+77771234567">+7 (777) 123-45-67</a></p>
-                <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/77771234567" target="_blank">Написать в WhatsApp</a></p>
-                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:remont@stirka-almaty.kz">remont@stirka-almaty.kz</a></p>
+                <p><i class="fas fa-phone-alt"></i> <strong>Телефон:</strong> <a href="tel:+77777326696">+7 (777) 732-66-96</a></p>
+                <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> <a href="https://wa.me/77777326696?text=Здравствуйте!" target="_blank">Написать в WhatsApp (+7 777 732-66-96)</a></p>
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:remont@stirka-almaty.kz">remont@stirka-almaty.kz</a> (для общих вопросов)</p>
                 <p><i class="fas fa-clock"></i> <strong>Время работы:</strong> Пн-Вс, с 9:00 до 21:00</p>
             </div>
-            <!-- Можно добавить простую карту как изображение или встроить, если нужно -->
             <div class="map-placeholder">
-                 <!-- Замените URL на скриншот карты или код встраивания, если нужно. -->
-                <img src="https://via.placeholder.com/800x300/F0F0F0/A0A0A0?text=Карта+Алматы+(Обслуживаемый+район)" alt="Карта обслуживания в Алматы">
+                 <!-- ЗАМЕНИТЕ НА ПУТЬ К ВАШЕМУ ЛОКАЛЬНОМУ ИЗОБРАЖЕНИЮ КАРТЫ -->
+                <img src="img/map-almaty.jpg" alt="Карта обслуживания в Алматы">
             </div>
         </div>
     </section>
@@ -147,50 +155,23 @@
     <footer>
         <div class="container">
             <p>© <span id="current-year"></span> РемСтирАлматы. Ремонт стиральных машин.</p>
-            <!-- <p><a href="/privacy.html">Политика конфиденциальности</a></p> -->
         </div>
     </footer>
 
     <script>
-        // Плавный скролл к якорям
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                if (!this.href.includes('wa.me') && !this.href.startsWith('tel:')) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
                 }
             });
         });
-
-        // Обработка формы (простая)
-        const form = document.getElementById('repair-form');
-        const formMessage = document.getElementById('form-message');
-        if (form) {
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const name = document.getElementById('name').value;
-                const phone = document.getElementById('phone').value;
-
-                if (name.trim() === '' || phone.trim() === '') {
-                    formMessage.textContent = 'Пожалуйста, заполните имя и телефон.';
-                    formMessage.style.color = 'red';
-                    formMessage.style.display = 'block';
-                    return;
-                }
-                // Здесь должна быть реальная отправка данных
-                console.log('Отправка данных:', { name, phone, problem: document.getElementById('problem').value });
-
-                formMessage.textContent = 'Спасибо! Ваша заявка принята. Мы скоро свяжемся с вами.';
-                formMessage.style.color = 'green';
-                formMessage.style.display = 'block';
-                form.reset();
-                setTimeout(() => { formMessage.style.display = 'none'; }, 6000);
-            });
-        }
         
-        // Год в футере
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
