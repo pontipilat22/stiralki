@@ -6,17 +6,25 @@
     <meta name="description" content="Профессиональный ремонт стиральных машин в Алматы. Быстро, качественно, с гарантией. Выезд на дом.">
     <meta name="keywords" content="ремонт стиральных машин Алматы, ремонт стиралок Алматы, мастер по стиральным машинам Алматы, сервис стиральных машин Алматы">
     <title>Ремонт стиральных машин в Алматы | Быстро и качественно</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
-    <!-- Можно добавить иконку сайта (favicon) -->
     <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">
-                <img src="img/logo.png" alt="Логотип Сервис Ремонта" id="logo-img"> <!-- Замените img/logo.png на ваш логотип или удалите img тег, если лого нет -->
-                <span>РемСтирАлматы</span>
-            </div>
+            <a href="#" class="logo-link"> <!-- Обернул логотип в ссылку на главную -->
+                <div class="logo">
+                    <!-- Рекомендуется SVG логотип для лучшего качества -->
+                    <img src="img/logo.svg" alt="Логотип Сервис Ремонта" id="logo-img"> 
+                    <span>РемСтирАлматы</span>
+                </div>
+            </a>
             <nav>
                 <a href="#services">Услуги</a>
                 <a href="#benefits">Преимущества</a>
@@ -24,86 +32,93 @@
                 <a href="#contact">Контакты</a>
             </nav>
             <div class="header-contact">
-                <a href="tel:+77771234567">+7 (777) 123-45-67</a>
-                <span>Звоните!</span>
+                <a href="tel:+77771234567" class="phone-link">+7 (777) 123-45-67</a>
+                <a href="#contact-form-section" class="cta-button header-cta">Заказать звонок</a>
             </div>
         </div>
     </header>
 
     <section id="hero">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h1>Сломалась стиральная машина?</h1>
-            <p>Профессиональный ремонт стиральных машин в Алматы с выездом на дом в день обращения!</p>
-            <a href="#contact-form-section" class="cta-button">Оставить заявку</a>
+            <h1>Качественный ремонт стиральных машин в Алматы</h1>
+            <p>Быстрый выезд мастера на дом. Гарантия на все виды работ. Доступные цены.</p>
+            <a href="#contact-form-section" class="cta-button hero-cta">Вызвать мастера</a>
         </div>
     </section>
 
     <section id="services" class="content-section">
         <div class="container">
-            <h2>Наши услуги</h2>
+            <h2>Какие поломки мы устраняем?</h2>
             <div class="services-grid">
                 <div class="service-item">
-                    <img src="img/icon-diagnostics.svg" alt="Диагностика" class="service-icon"> <!-- Замените иконки -->
+                    <img src="img/icon-diagnostics.svg" alt="Диагностика" class="service-icon">
                     <h3>Диагностика неисправностей</h3>
-                    <p>Точное определение причины поломки.</p>
+                    <p>Точное определение причины поломки вашей техники.</p>
                 </div>
                 <div class="service-item">
                     <img src="img/icon-pump.svg" alt="Замена насоса" class="service-icon">
-                    <h3>Замена насоса (помпы)</h3>
-                    <p>Если машина не сливает воду.</p>
+                    <h3>Не сливает воду</h3>
+                    <p>Замена или ремонт сливного насоса (помпы).</p>
                 </div>
                 <div class="service-item">
                     <img src="img/icon-heater.svg" alt="Замена ТЭНа" class="service-icon">
-                    <h3>Замена ТЭНа</h3>
-                    <p>Если машина не греет воду.</p>
+                    <h3>Не греет воду</h3>
+                    <p>Замена нагревательного элемента (ТЭНа).</p>
                 </div>
                 <div class="service-item">
                     <img src="img/icon-motor.svg" alt="Ремонт двигателя" class="service-icon">
-                    <h3>Ремонт/замена двигателя</h3>
-                    <p>Проблемы с вращением барабана.</p>
+                    <h3>Не крутит барабан</h3>
+                    <p>Ремонт или замена двигателя, щеток, ремня.</p>
                 </div>
                 <div class="service-item">
-                    <img src="img/icon-belt.svg" alt="Замена ремня" class="service-icon">
-                    <h3>Замена приводного ремня</h3>
-                    <p>Если барабан не крутится, но мотор шумит.</p>
+                    <img src="img/icon-door.svg" alt="Проблемы с дверцей" class="service-icon"> <!-- Новая иконка -->
+                    <h3>Проблемы с дверцей</h3>
+                    <p>Ремонт замка (УБЛ), замена ручки или манжеты люка.</p>
                 </div>
                 <div class="service-item">
-                    <img src="img/icon-module.svg" alt="Ремонт модуля" class="service-icon">
-                    <h3>Ремонт электронных модулей</h3>
-                    <p>Сложные поломки электроники.</p>
+                    <img src="img/icon-electronics.svg" alt="Ремонт электроники" class="service-icon"> <!-- Замена иконки icon-module -->
+                    <h3>Сбои электроники</h3>
+                    <p>Ремонт или замена электронного модуля управления.</p>
                 </div>
             </div>
-            <p class="services-note">Ремонтируем стиральные машины всех марок: Samsung, LG, Bosch, Indesit, Ariston, Beko, Candy, Electrolux, Zanussi и другие.</p>
+            <p class="services-note">Ремонтируем стиральные машины всех популярных марок: Samsung, LG, Bosch, Indesit, Ariston, Beko, Candy, Electrolux, Zanussi, Haier, Gorenje и другие.</p>
         </div>
     </section>
 
-    <section id="benefits" class="content-section bg-light">
+    <section id="benefits" class="content-section bg-light-gray"> <!-- Изменен фон -->
         <div class="container">
-            <h2>Почему выбирают нас?</h2>
+            <h2>Почему стоит выбрать наш сервис?</h2>
             <div class="benefits-grid">
                 <div class="benefit-item">
+                    <img src="img/icon-fast.svg" alt="Быстрый выезд" class="benefit-icon">
                     <h4>Быстрый выезд</h4>
-                    <p>Мастер приедет к вам в течение 1-2 часов или в удобное для вас время.</p>
+                    <p>Мастер приедет в течение 1 часа или в удобное для вас время по Алматы.</p>
                 </div>
                 <div class="benefit-item">
+                    <img src="img/icon-experience.svg" alt="Опытные мастера" class="benefit-icon">
                     <h4>Опытные мастера</h4>
-                    <p>Квалифицированные специалисты с опытом работы от 5 лет.</p>
+                    <p>Квалифицированные специалисты с опытом работы более 5 лет.</p>
                 </div>
                 <div class="benefit-item">
-                    <h4>Гарантия на работы</h4>
-                    <p>Предоставляем гарантию на выполненные работы и запчасти до 12 месяцев.</p>
+                    <img src="img/icon-warranty.svg" alt="Гарантия" class="benefit-icon">
+                    <h4>Гарантия до 2 лет</h4>
+                    <p>Предоставляем официальную гарантию на выполненные работы и запчасти.</p>
                 </div>
                 <div class="benefit-item">
+                    <img src="img/icon-parts.svg" alt="Оригинальные запчасти" class="benefit-icon">
                     <h4>Оригинальные запчасти</h4>
-                    <p>Используем только качественные и проверенные комплектующие.</p>
+                    <p>Используем только качественные и сертифицированные комплектующие.</p>
                 </div>
                 <div class="benefit-item">
-                    <h4>Доступные цены</h4>
-                    <p>Честные цены без скрытых наценок. Диагностика бесплатна при ремонте.</p>
+                    <img src="img/icon-price.svg" alt="Доступные цены" class="benefit-icon">
+                    <h4>Честные цены</h4>
+                    <p>Прозрачное ценообразование. Диагностика бесплатна при ремонте.</p>
                 </div>
                 <div class="benefit-item">
-                    <h4>Работаем без выходных</h4>
-                    <p>Принимаем заявки и выезжаем на ремонт 7 дней в неделю.</p>
+                    <img src="img/icon-schedule.svg" alt="Работаем без выходных" class="benefit-icon">
+                    <h4>Работаем ежедневно</h4>
+                    <p>Принимаем заявки и выезжаем на ремонт 7 дней в неделю, без выходных.</p>
                 </div>
             </div>
         </div>
@@ -111,152 +126,184 @@
 
     <section id="process" class="content-section">
         <div class="container">
-            <h2>Как мы работаем</h2>
+            <h2>Процесс ремонта вашей стиральной машины</h2>
             <div class="process-steps">
                 <div class="step">
-                    <div class="step-number">1</div>
+                    <div class="step-icon-container">
+                        <img src="img/icon-step-call.svg" alt="Заявка" class="step-icon">
+                    </div>
                     <div class="step-description">
-                        <strong>Заявка</strong>
-                        <p>Вы оставляете заявку на сайте или звоните нам.</p>
+                        <strong>1. Ваша заявка</strong>
+                        <p>Оставляете заявку на сайте или звоните нам по телефону.</p>
                     </div>
                 </div>
                 <div class="step">
-                    <div class="step-number">2</div>
+                     <div class="step-icon-container">
+                        <img src="img/icon-step-consult.svg" alt="Консультация" class="step-icon">
+                    </div>
                     <div class="step-description">
-                        <strong>Консультация</strong>
-                        <p>Мы уточняем детали поломки и согласовываем время визита мастера.</p>
+                        <strong>2. Консультация</strong>
+                        <p>Менеджер уточняет детали поломки и согласовывает время приезда мастера.</p>
                     </div>
                 </div>
                 <div class="step">
-                    <div class="step-number">3</div>
+                     <div class="step-icon-container">
+                        <img src="img/icon-step-diagnostics.svg" alt="Диагностика" class="step-icon">
+                    </div>
                     <div class="step-description">
-                        <strong>Диагностика</strong>
-                        <p>Мастер проводит диагностику вашей стиральной машины на месте.</p>
+                        <strong>3. Диагностика на дому</strong>
+                        <p>Мастер проводит полную диагностику вашей стиральной машины.</p>
                     </div>
                 </div>
                 <div class="step">
-                    <div class="step-number">4</div>
+                    <div class="step-icon-container">
+                        <img src="img/icon-step-repair.svg" alt="Ремонт" class="step-icon">
+                    </div>
                     <div class="step-description">
-                        <strong>Ремонт</strong>
-                        <p>После согласования стоимости, мастер выполняет ремонт.</p>
+                        <strong>4. Качественный ремонт</strong>
+                        <p>После согласования стоимости, специалист выполняет ремонт.</p>
                     </div>
                 </div>
                 <div class="step">
-                    <div class="step-number">5</div>
+                     <div class="step-icon-container">
+                        <img src="img/icon-step-garant.svg" alt="Гарантия" class="step-icon">
+                    </div>
                     <div class="step-description">
-                        <strong>Гарантия</strong>
-                        <p>Вы получаете работающую технику и гарантию на выполненные работы.</p>
+                        <strong>5. Гарантия и оплата</strong>
+                        <p>Вы принимаете работу, получаете гарантийный талон и оплачиваете услуги.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact-form-section" class="content-section bg-light">
+    <section id="contact-form-section" class="content-section bg-primary-light"> <!-- Новый фон для формы -->
         <div class="container">
-            <h2>Оставьте заявку на ремонт</h2>
-            <p>Наш менеджер свяжется с вами в течение 15 минут для уточнения деталей.</p>
+            <h2>Нужен ремонт? Оставьте заявку!</h2>
+            <p>Мы перезвоним вам в течение 5-10 минут, чтобы обсудить детали и назначить визит мастера.</p>
             <form id="repair-form">
                 <div class="form-group">
-                    <label for="name">Ваше имя:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
                 </div>
                 <div class="form-group">
-                    <label for="phone">Ваш телефон:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Ваш телефон (например, +7 XXX XXX XX XX)" required>
                 </div>
                 <div class="form-group">
-                    <label for="problem">Описание проблемы (необязательно):</label>
-                    <textarea id="problem" name="problem" rows="3"></textarea>
+                    <textarea id="problem" name="problem" rows="3" placeholder="Кратко опишите проблему (например, не сливает воду, марка Indesit)"></textarea>
                 </div>
-                <button type="submit" class="cta-button">Отправить заявку</button>
+                <button type="submit" class="cta-button form-submit-button">Отправить заявку</button>
+                <p class="privacy-policy-link">Нажимая кнопку "Отправить заявку", вы соглашаетесь с <a href="/privacy-policy.html" target="_blank">политикой конфиденциальности</a>.</p> <!-- Добавьте ссылку на вашу политику -->
             </form>
-            <p id="form-message" style="display:none; margin-top: 15px;"></p>
+            <p id="form-message" style="display:none; margin-top: 20px; text-align:center; font-weight: bold;"></p>
         </div>
     </section>
 
     <section id="contact" class="content-section">
         <div class="container">
-            <h2>Контакты</h2>
-            <p>Свяжитесь с нами удобным для вас способом:</p>
-            <div class="contact-details">
-                <p><strong>Телефон:</strong> <a href="tel:+77771234567">+7 (777) 123-45-67</a> (WhatsApp, Telegram)</p>
-                <p><strong>Email:</strong> <a href="mailto:remont@stirka-almaty.kz">remont@stirka-almaty.kz</a></p>
-                <p><strong>Адрес офиса (если есть):</strong> г. Алматы, ул. Примерная, д. 1 (только по предварительной записи)</p>
-                <p><strong>Время работы:</strong> Ежедневно с 9:00 до 21:00</p>
+            <h2>Наши контакты в Алматы</h2>
+            <div class="contact-info-wrapper">
+                <div class="contact-details">
+                    <p><img src="img/icon-phone.svg" alt="Телефон" class="contact-icon"><strong>Телефон:</strong> <a href="tel:+77771234567">+7 (777) 123-45-67</a></p>
+                    <p><img src="img/icon-whatsapp.svg" alt="WhatsApp" class="contact-icon"><strong>WhatsApp:</strong> <a href="https://wa.me/77771234567" target="_blank">+7 (777) 123-45-67</a></p>
+                    <p><img src="img/icon-email.svg" alt="Email" class="contact-icon"><strong>Email:</strong> <a href="mailto:remont@stirka-almaty.kz">remont@stirka-almaty.kz</a></p>
+                    <p><img src="img/icon-clock.svg" alt="Время работы" class="contact-icon"><strong>Время работы:</strong> Ежедневно с 08:00 до 22:00</p>
+                    <p><img src="img/icon-location.svg" alt="Адрес" class="contact-icon"><strong>Обслуживаем все районы Алматы</strong> и ближайший пригород.</p>
+                </div>
+                <div class="contact-map">
+                    <!-- Пример вставки Яндекс.Карты. Замените на свой код -->
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aba9a8f2b76387096f7f04f27aa9a20c2a489c8ef1c66e36590a961374610b183&source=constructor" width="100%" height="350" frameborder="0"></iframe>
+                </div>
             </div>
-            <!-- Здесь можно добавить карту, если нужно -->
-            <!-- <div id="map">Карта Алматы с отметкой</div> -->
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>© 2023-2024 РемСтирАлматы. Все права защищены.</p>
-            <p>Ремонт стиральных машин в Алматы.</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo-white.svg" alt="Логотип РемСтирАлматы" id="footer-logo-img"> <!-- Лого для футера -->
+                    <span>РемСтирАлматы</span>
+                </div>
+                <div class="footer-nav">
+                    <a href="#services">Услуги</a>
+                    <a href="#benefits">Преимущества</a>
+                    <a href="#process">Как мы работаем</a>
+                    <a href="/privacy-policy.html" target="_blank">Политика конфиденциальности</a>
+                </div>
+                <div class="footer-contacts">
+                    <p><a href="tel:+77771234567">+7 (777) 123-45-67</a></p>
+                    <p>г. Алматы</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023- <span id="current-year"></span> РемСтирАлматы. Все права защищены.</p>
+                <p>Информация на сайте не является публичной офертой.</p>
+            </div>
         </div>
     </footer>
 
     <script>
-        // Плавный скролл к якорям
+        // Плавный скролл
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
-                // Проверяем, есть ли такой элемент, прежде чем скроллить
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     targetElement.scrollIntoView({
                         behavior: 'smooth'
                     });
-                } else if (targetId === '#contact-form-section') { // Если это кнопка для формы
-                    document.getElementById('contact-form-section').scrollIntoView({ behavior: 'smooth' });
                 }
             });
         });
 
-        // Обработка формы (простая, без отправки на сервер, только сообщение)
-        // Для реальной отправки понадобится бэкенд или сервис типа Formspree, Getform
+        // Обработка формы
         const form = document.getElementById('repair-form');
         const formMessage = document.getElementById('form-message');
-
         if (form) {
             form.addEventListener('submit', function(e) {
-                e.preventDefault(); // Предотвращаем стандартную отправку формы
-                
+                e.preventDefault();
                 const name = document.getElementById('name').value;
                 const phone = document.getElementById('phone').value;
 
                 if (name.trim() === '' || phone.trim() === '') {
                     formMessage.textContent = 'Пожалуйста, заполните имя и телефон.';
-                    formMessage.style.color = 'red';
+                    formMessage.style.color = '#dc3545'; // Bootstrap danger color
                     formMessage.style.display = 'block';
                     return;
                 }
-
-                // Здесь могла бы быть отправка данных на сервер (AJAX/Fetch)
-                // Например, console.log('Отправка данных:', { name, phone, problem: document.getElementById('problem').value });
+                // Здесь должна быть реальная отправка данных на сервер
+                console.log('Отправка данных:', { name, phone, problem: document.getElementById('problem').value });
 
                 formMessage.textContent = 'Спасибо! Ваша заявка принята. Мы скоро свяжемся с вами.';
-                formMessage.style.color = 'green';
+                formMessage.style.color = '#28a745'; // Bootstrap success color
                 formMessage.style.display = 'block';
-                form.reset(); // Очищаем поля формы
-
+                form.reset();
                 setTimeout(() => {
                     formMessage.style.display = 'none';
-                }, 5000); // Скрываем сообщение через 5 секунд
+                }, 7000);
             });
         }
 
-        // Если нет лого, можно скрыть img или заменить текстом
-        const logoImg = document.getElementById('logo-img');
-        if (logoImg && !logoImg.getAttribute('src').includes('logo.png')) { // Проверяем, если src не дефолтный
-            // Ничего не делаем, если пользователь указал свой логотип
-        } else if (logoImg) {
-             // Если дефолтный src и файл logo.png не найден, можно скрыть или заменить
-            logoImg.style.display = 'none'; // или logoImg.alt = 'РемСтирАлматы'; и стилизовать alt
-        }
+        // Обновление года в футере
+        document.getElementById('current-year').textContent = new Date().getFullYear();
 
+        // Проверка логотипа (если не svg, а png, и не найден)
+        const logoImg = document.getElementById('logo-img');
+        if (logoImg && logoImg.tagName === 'IMG' && logoImg.src.includes('logo.png')) {
+            logoImg.onerror = function() {
+                this.style.display = 'none';
+                // Можно создать текстовый логотип взамен
+                const logoContainer = this.closest('.logo');
+                if (logoContainer && !logoContainer.querySelector('.text-logo')) {
+                    const textLogo = document.createElement('span');
+                    textLogo.className = 'text-logo';
+                    textLogo.textContent = logoContainer.querySelector('span').textContent; // Берем текст из существующего span
+                    logoContainer.insertBefore(textLogo, logoContainer.querySelector('span'));
+                    logoContainer.querySelector('span').style.display = 'none'; // Скрываем старый span
+                }
+            };
+        }
     </script>
 </body>
 </html>
